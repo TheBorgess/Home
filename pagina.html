@@ -328,5 +328,24 @@ function showContact() {
 
 </script>
 
+<!-- ChatBot do Flowise -->
+<script type="module">
+    import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+    Chatbot.init({
+        chatflowid: "ee754ff8-f4c3-4b53-8aba-8f550236d128",
+        apiHost: "https://cloud.flowiseai.com",
+        theme: {
+            chatWindow: {
+                welcomeMessage: "Olá! Como posso te ajudar?",
+                placeholder: "Digite sua pergunta...",
+                errorMessage: "Mande e-mail para marcioitaqui@yahoo.com.br",
+            },
+            footer: {
+                showFooter: false
+            }
+        }
+    })
+</script>
+
 </body>
 </html>
